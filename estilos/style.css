@@ -7,7 +7,7 @@
 }
 
 header {
-  background: linear-gradient(#f5f5f5, #eeeeee6c);
+  background:  #12048f;
   font-family:'Open Sans', sans-serif;;
 }
 
@@ -36,14 +36,39 @@ nav ul li {
   margin-right: 20px;
 }
 
-a{
-  text-decoration: none;
-  color: #555;
+.col {
+  padding: 20px;
+  flex-basis: 50%;
+  min-width: 300px;
 }
 
-p {
-  color: #555;
+.col img{
+  max-width: 100%;
+  padding: 50px 0;
 }
+
+ a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.col {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col h1{
+  color: #ffff;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0px;
+}
+
+.col p {
+  color: #ffffff;
+}
+
+
 
 .container{
   max-width: 1300px;
@@ -57,6 +82,7 @@ p {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 10px;
 }
 
 .col2 {
@@ -73,11 +99,16 @@ p {
   font-size: 50px;
   line-height: 60px;
   margin: 25px 0px;
+  color: black;
 }
+
+.col2 p {
+  color: black;
+ }
 
 .btn{
   display: inline-block;
-  background: #ff523b;
+  background: #000000;
   color: #fff;
   padding: 8px 30px;
   margin: 30px 0px;
@@ -299,13 +330,17 @@ ul {
   display: none;
 }
 
+/* Icone do menu no header */
+
 @media only screen and (max-width: 800px) {
   nav ul{
     position: absolute;
     top: 70px;
     left: 0; 
-    background: #000000;
+    background: #00000000;
     width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
   }
 
   nav ul li{
@@ -316,7 +351,7 @@ ul {
   }
 
   nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
   }
 
   .icon{
@@ -519,4 +554,86 @@ td:last-child{
 
 th:last-child{
   text-align: right;
+}
+
+/* Account Page */
+
+.account-page{
+  padding: 50px 0;
+  background: radial-gradient(white, rgb(104, 83, 83));
+}
+
+.form-container{
+  background: white;
+  width: 300px;
+  height: 400px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  box-shadow:0 0 20px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: black;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+
+.form-btn{
+  display: inline-block;
+}
+
+.form-container form{
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 1s;
+}
+
+form input{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 10px 0;
+  border: 1px solid black;
+}
+
+form .btn{
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+form .btn:focus{
+  outline: none;
+}
+
+#LoginForm{
+  left: -300px;
+}
+
+#RegForm{
+  left: 0;
+}
+
+form a{
+  font-size: 12px;
+}
+
+#Indicator{
+  width: 100px;
+  border: none;
+  background: black;
+  height: 3px;
+  margin-top: 8px;
+  transform: translate(100px);
+  transition: transform 1s;
 }
