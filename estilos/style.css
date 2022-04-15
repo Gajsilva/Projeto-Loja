@@ -7,7 +7,7 @@
 }
 
 header {
-  background:  #12048f;
+  background:  #003CC5;
   font-family:'Open Sans', sans-serif;;
 }
 
@@ -40,6 +40,35 @@ nav ul li {
   padding: 20px    ;
   flex-basis: 50%;
   min-width: 300px;
+}
+
+.col .digitando{
+ margin: 0 auto;
+ border-right: 2px solid rgba(255, 255, 255, 0.75);
+ white-space: nowrap;
+ overflow: hidden;
+}
+
+.typing-animation{
+  animation: blinkCursor 500ms Infinite normal, typing 4s 1s normal;
+}
+
+@keyframes typing{
+  from {
+    width: 0;
+  }
+  to {
+    width: 18em;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right: transparent;
+  }
 }
 
 .col img{
