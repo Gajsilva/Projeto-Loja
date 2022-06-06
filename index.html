@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
      <header>
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="/images/logo-white.png" width="125px">
+                    <img src="/images/logo.png" width="125px">
                 </div>
                   <nav class="nav">
                      <ul id="MenuItens">
@@ -25,13 +28,13 @@
                          <li><a href="/account.html">Entre ou Cadastre-se</a></li>
                      </ul>
                   </nav>
-                <a href="/Cart.html"><img src="/images/cart.png" width="30px" height="30px"></a>
+                <a class="cart" href="/Cart.html"><img src="/images/cartblack.png" width="30px" height="30px"></a>
                 
-                <img src="/images/menu.png" class="icon" onclick="menuicon()">
+                <img src="/images/menublack.png" class="icon" onclick="menuicon()">
             </div>
             <div class="row">
                 <div class="col">
-                    <h1 class="digitando">Uma Loja Completa Para Seu Celular! </h1>
+                    <h1 >A Assistência Completa Para Seu Celular! </h1>
                     <p> Até quando você vai ficar se esforçando para enxergar alguma coisa nesse celular com a tela toda rachada? Você merece mais do que isso e eu posso te ajudar! </p>
                     <a href="" class="btn">Venha conhecer! &#8594;</a>
                 </div>
@@ -42,101 +45,83 @@
         </div>
      </header>
 
-                        <!---ORÇAMENTO--->
-         <div class="box">
-                 <form action="">
-                     <fieldset>
-                     <legend>Solicite seu Orçamento</legend>
-                     <div class="inputBox">
-                        <select name="tipoaparelho">
-                            <option value="celular" selected>Celular</option>
-                            <option value="tablet">Tablet</option>
-                            <option value="notebook">Notebook</option>
-                            <option value="tv">TV</option>
-                            <option value="smartwatch">SmartWatch</option>
-                            <option value="outro">Outros equipamentos</option>
-                            </select>
-
-                            <div class="form-group">
-                                <input type="text" name="aparelho" required placeholder="Qual o modelo?" " />
-                                </div>
-                                <div class="form-group">
-                                <input type="text" name="defeito" required placeholder="Qual o defeito? Ou Acessório?"  />
-                                </div>
-                                <div class="form-group">
-                                <input type="text" required name="nome" placeholder="Seu nome"/>
-                                </div>
-                                <div class="form-group">
-                                <input type="text" required name="email" placeholder="Seu e-mail"/>
-                                </div>
-                                <div class="form-group">
-                                <input type="text" required name="telefone" placeholder="Seu telefone" class="telefone" />
-                                </div>
-                                <div class="form-group">
-                                <input type="text" required name="CEP" placeholder="Cep"/>
-                                </div>
-                                <button class="btn-env">Enviar!</button>
-                     </fieldset>
-                 </form>
-             
-         </div>
-    
-    
-
-                        <!--PRODUTOS-->
+       <!--PRODUTOS-->
 
      <div class="container-small">
         <h2 class="titulo">Produtos</h2>
         <div class="row">
             <div class="col4">
-                <img src="/images/product-1.jpg">
-                <h4></h4>
-                <div class="rating">
-                    
-
-
-
-                </div>
-                <p></p>
+                <img src="/images/product-1.png">
+                <h4>Fone de Ouvido Bluetooth Redmi Earbuds Airdots "S" - Xiaomi</h4>
+                <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="2" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="3" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="4" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="5" >
+                    </li>
+                </ul>
+                <p>R$ 99,90</p>
             </div>
         
             <div class="col4">
-                <img src="/images/product-2.jpg" alt="">
-                <h4></h4>
-                <div class="avaliacao">
-                
-                
-                
-                </div>
-                <p></p>
+                <img src="/images/product-2.png" alt="">
+                <h4>
+                    Cartão de memória Kingston com adaptador SD 128GB</h4>
+                    <ul class="avaliacao">
+                        <li class="star-icon ativo" data-avaliacao="1" >
+                        </li>
+                        <li class="star-icon" data-avaliacao="2" >
+                        </li>
+                        <li class="star-icon" data-avaliacao="3" >
+                        </li>
+                        <li class="star-icon" data-avaliacao="4" >
+                        </li>
+                        <li class="star-icon" data-avaliacao="5" >
+                        </li>
+                    </ul>
+                <p>R$ 89,90</p>
             </div>
             <div class="col4">
-                <img src="/images/product-3.jpg" alt="">
-                <h4></h4>
-                <div class="avaliacao">
-                
-                
-                
-                </div>
-                <p></p>
+                <img src="/images/product-3.png" alt="">
+                <h4>Fone De Ouvido Corrida Bluetooth Regulavel Mp3</h4>
+                <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="2" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="3" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="4" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="5" >
+                    </li>
+                </ul>
+                <p> R$ 75,90</p>
             </div>
             <div class="col4">
-                <img src="/images/product-4.jpg" alt="">
-                <h4></h4>
-                <div class="avaliacao">
-                
-                
-                
-                </div>
-                <p></p>
-            </div>
-            <div class="col4">
-                <img src="/images/product-6.jpg" alt="">
-                <h4></h4>
-                <div class="avaliacao">
-                
-                </div>
-                <p></p>
+                <img src="/images/product-4.png" alt="">
+                <h4>
+                    Moto E20 Dual SIM 32 GB cinza 2 GB RAM
+                </h4>
+                <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="2" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="3" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="4" >
+                    </li>
+                    <li class="star-icon" data-avaliacao="5" >
+                    </li>
+                </ul>
+                <p>R$ 959,90</p>
+
             </div>
         </div>
     </div>
@@ -168,48 +153,6 @@
         </div>
     </div>
 
-    <!--Testimonial
-    <div class="testimonial">
-        <div class="container-small">
-            <div class="row">
-                <div class="col3">
-                    <i></i>
-                    
-                        <p>Começei a estudar desenvolvimento web, venho dia apos dia dedicando aos estudos ea prática.
-                            <br> Satisfação em criar algo novo !!!!
-                        </p>
-                    
-                    <div class="rating">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-                    <img src="/images/user-1.png" >
-                    <h3>Gabriel</h3>
-                </div>
-
-                <div class="col3">
-                    <i></i>
-                    <p>Fundador da Lp Tec 
-                        <br>
-                        Foram muitas batalhas para chegar aonde estou !!!
-                    </p>
-                    <div class="rating">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-                    <img src="/images/user-2.jpg" >
-                    <h3>Luan Patrick</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    -->
-
-    <!--Brands-->
-
     <div class="brands">
         <div class="container-small">
             <div class="row">
@@ -218,6 +161,9 @@
                 </div>
                 <div class="col5">
                     <img src="/images/logo-paypal.png" alt="">
+                </div>
+                <div class="col5">
+                    <img src="/images/logo-samsung.png" alt="">
                 </div>
             </div>
         </div>
@@ -229,8 +175,8 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col1">
-                    <h3>Download</h3>
-                    <p>APP</p>
+                    <h3>Baixe agora o aplicativo !</h3>
+                    <p>Clique no icone abaixo </p>
                     <div class="app-logo">
                         <img src="/images/play-store.png">
                         <img src="/images/app-store.png">
@@ -242,11 +188,11 @@
                 </div>
                 
                 <div class="footer-col4">
-                    <h3>Useful</h3>
+                    <h3>Redes Sociais</h3>
                     <ul>
                         <li>Facebook</li>
                         <li>Instagram</li>
-                        <li>Whastzapp</li>
+                        <li>Whatsapp</li>
                     </ul>
                 </div>
             </div>
@@ -255,8 +201,8 @@
         </div>
     </footer>
 
-    <script src="/script/script.js" >
-        
-    </script>
+    <script src="/script/script.js"></script>
+    <script src="/script/avaliacao.js"></script>
+
 </body>
 </html>
