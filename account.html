@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | Lp Tec </title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/estilos/produtos.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="/estilos/account.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="/images/logo.png" width="125px">
+                </div>
+                  <nav class="nav">
+                     <ul id="MenuItens">
+                         <li><a class="menu" href="/index.html">Home</a></li>
+                         <li><a class="menu" href="">Sobre a LP TEC</a></li>
+                         <li><a class="menu" href="/produtos.html">Produtos</a></li>
+                         <li><a class="menu" href="/account.html">Entre ou Cadastre-se</a></li>
+                     </ul>
+                  </nav>
+                <a class="cart" href="/Cart.html"><img src="/images/cartblack.png" width="30px" height="30px"></a>
+                
+                <img src="/images/menublack.png" class="icon" onclick="menuicon()">
+            </div>
+        </div>
+     </header>
+
+    <div class="container-body">     
+        <div class="container-form">
+         <div class="form">
+             <form action="#">
+                 <div class="form-header">
+                    <div class="form-title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button> <a href="#">Entrar</a> </button>
+                    </div>
+                 </div>
+                 
+                 <div class="input-group">
+                     <div class="input-box">
+                         <label for="firstname">Primeiro nome</label>
+                         <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                     </div>
+
+                     <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="Confirmpassword">Confirme sua Senha</label>
+                        <input id="Confirmpassword" type="password" name="Confirmpassword" placeholder="Confirme sua senha" required>
+                    </div>
+                 </div>
+
+                 <div class="gender-inputs">
+                     <div class="gender-title">
+                         <h6>Gênero</h6>
+                     </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Feminino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="others" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="none" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div> 
+
+                 </div>
+
+                 <div class="continue-button">
+                     <button><a href="#">Continuar</a></button>
+                 </div>
+
+             </form>
+         </div>
+     </div>
+    </div>
+
+
+    <!---Rodapé-->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Baixe agora o aplicativo !</h3>
+                    <p>Clique no icone abaixo </p>
+                    <div class="app-logo">
+                        <img src="/images/play-store.png">
+                        <img src="/images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="/images/logo-white.png" >
+                   
+                </div>
+                
+                <div class="footer-col4">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Whatsapp</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+    </footer>
+
+    <script src="/script/script.js"></script>
+    <script src="/script/avaliacao.js"></script>
+
+</body>
+</html>

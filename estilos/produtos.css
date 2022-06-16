@@ -1,0 +1,12 @@
+.menuNav{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 255, 0.945);
+}
+
+ .menuNav a:not([class="cart"]) {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+   padding: 4px;
+}
