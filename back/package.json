@@ -1,0 +1,9 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "Backend da loja",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Gabriel Silva",
+  "license": "MIT"
+}
