@@ -4,7 +4,7 @@ http
 .createServer((request, response) => {
     response.writeHead(200, { 'Content-Type': 'application/json' });
 
-    if(request.url === "/produto");
+    if(request.url === "/produtos");
 
     if(request.url === "/usuario");
     

@@ -1,0 +1,27 @@
+POST http://localhost:4001/produtos
+Content-Type: application/json
+
+{
+    "name": "samdsds",
+    "price": 4
+}
+
+###
+
+GET http://localhost:4001/produtos
+
+###
+GET http://localhost:4001/produtos/9488d03b-fdde-484b-b38c-4eca5d425d00
+
+###
+PUT  http://localhost:4001/produtos/
+content-Type: application/json
+
+{
+    "name": "samsungui",
+    "price": 20
+}
+
+###
+
+DELETE  http://localhost:4001/produtos/91ca2e6f-8491-45cb-b842-1567f77927d8

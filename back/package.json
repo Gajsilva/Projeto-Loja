@@ -4,7 +4,7 @@
   "description": "Backend da loja",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon routes/app.js"
   },
   "author": "Gabriel Silva",
   "license": "MIT",
