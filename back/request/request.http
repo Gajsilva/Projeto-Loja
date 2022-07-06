@@ -2,7 +2,7 @@ POST http://localhost:4001/produtos
 Content-Type: application/json
 
 {
-    "name": "samdsds",
+    "name": "jjjhj",
     "price": 4
 }
 
@@ -24,4 +24,4 @@ content-Type: application/json
 
 ###
 
-DELETE  http://localhost:4001/produtos/91ca2e6f-8491-45cb-b842-1567f77927d8
+DELETE  http://localhost:4001/produtos/
